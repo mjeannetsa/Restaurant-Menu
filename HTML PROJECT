@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mel J Bistro</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        text-align: center;
+        background-color: #333;
+        color: white;
+        padding: 10px;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        margin: 0;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+      }
+
+      /* Style for the main content */
+      main {
+        margin: 20px auto;
+        width: 80%;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Style for articles (menu items) */
+      article {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      article img {
+        width: 150px;
+        margin-right: 20px;
+        float: left;
+        border-radius: 5px;
+      }
+
+      article h3 {
+        margin-top: 0;
+      }
+
+      /* Form styling */
+      form {
+        margin-top: 30px;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      input[type="number"],
+      input[type="submit"],
+      textarea {
+        display: block;
+        margin: 10px 0;
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+
+      input[type="submit"] {
+        background-color: #333;
+        color: white;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #555;
+      }
+
+      footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #333;
+        color: white;
+        margin-top: 20px;
+      }
+
+      footer p {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img width="500px" height="500px" id="header-img" src="https://getsling.com/wp-content/uploads/2023/01/what-is-a-bistro_2.jpg" alt="Restaurant Logo">
+      <h1>Mel J Bistro</h1>
+      <nav>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#order-form">Order Form</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="menu">
+        <h2>Menu</h2>
+        <article>
+          <img src="https://dyvn6jpt1f0d3.cloudfront.net/wp-content/uploads/2023/10/14154227/BLT-for-recipe-1-6-1200x675.jpeg" alt="Classic BLT">
+          <h3>Classic BLT</h3>
+          <p>The BLT: A sandwich that asks, "Why complicate perfection?" It's bacon, lettuce, and tomato—because even sandwiches need minimalism. Served with bread, because eating it by hand seemed too avant-garde.<br><i>$9.99</i></p>
+        </article>
+        <article>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Q9Ry5KIPKmxkI6-7ni4NCL5z9jPmzf8Pfw&s" alt="Tomato Soup">
+          <h3>Tomato Soup</h3>
+          <p>Tomato Soup: It's like a warm hug from a vegetable that couldn't decide if it wanted to be a fruit. Smooth, tangy, and mildly judgmental—because it knows you're going to dip a grilled cheese in it anyway.<br><i>$5.99</i></p>
+        </article>
+        <article>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaMmJXxcofVuN3PGgrUJ51uRqxAl_5D11wTg&s" alt="Grilled Cheese">
+          <h3>Grilled Cheese</h3>
+          <p>Grilled Cheese: It's the culinary equivalent of a safety blanket, but with more butter. Cheese, bread, and heat—because sometimes simplicity is the height of sophistication. Also, it’s just an excuse to eat a sandwich that’s 90% melted cheese.<br><i>$8.99</i></p>
+        </article>
+      </section>
+
+      <!-- Order Form Section -->
+      <form>
+        <section id="order-form">
+          <h2>Order Form</h2>
+          <!-- BLT Order -->
+          <label for="blt-quantity">BLT Quantity:</label>
+          <input type="number" id="blt-quantity" name="blt-quantity" min="0" required>
+
+          <p>Choose a side:</p>
+          <input type="radio" name="blt-sides" value="side salad" id="blt-side-salad">
+          <label for="blt-side-salad">Side salad</label><br>
+          <input type="radio" name="blt-sides" value="fresh fruit" id="blt-fresh-fruit">
+          <label for="blt-fresh-fruit">Fresh fruit</label><br>
+          <input type="radio" name="blt-sides" value="potato chips" id="blt-potato-chips">
+          <label for="blt-potato-chips">Potato chips</label><br>
+
+          <p>Add Ons:</p>
+          <input type="checkbox" name="blt-addons" value="turkey" id="blt-turkey">
+          <label for="blt-turkey">Turkey <i>$2.99</i></label><br>
+          <input type="checkbox" name="blt-addons" value="avocado" id="blt-avocado">
+          <label for="blt-avocado">Avocado <i>$1.99</i></label><br>
+
+          <br><br>
+
+          <!-- Tomato Soup Order -->
+          <label for="tomato-soup-quantity">Tomato Soup Quantity:</label>
+          <input type="number" id="tomato-soup-quantity" name="tomato-soup-quantity" min="0" required>
+
+          <p>Choose a side:</p>
+          <input type="radio" name="tomato-soup-sides" value="side salad" id="tomato-soup-side-salad">
+          <label for="tomato-soup-side-salad">Side salad</label><br>
+          <input type="radio" name="tomato-soup-sides" value="fresh fruit" id="tomato-soup-fresh-fruit">
+          <label for="tomato-soup-fresh-fruit">Fresh fruit</label><br>
+          <input type="radio" name="tomato-soup-sides" value="potato chips" id="tomato-soup-potato-chips">
+          <label for="tomato-soup-potato-chips">Potato chips</label><br>
+
+          <p>Add Ons:</p>
+          <input type="checkbox" name="tomato-soup-addons" value="avocado" id="tomato-soup-avocado">
+          <label for="tomato-soup-avocado">Avocado <i>$1.99</i></label><br>
+
+          <br><br>
+
+          <!-- Grilled Cheese Order -->
+          <label for="grilled-cheese-quantity">Grilled Cheese Quantity:</label>
+          <input type="number" id="grilled-cheese-quantity" name="grilled-cheese-quantity" min="0" required>
+
+          <p>Choose a side:</p>
+          <input type="radio" name="grilled-cheese-sides" value="side salad" id="grilled-cheese-side-salad">
+          <label for="grilled-cheese-side-salad">Side salad</label><br>
+          <input type="radio" name="grilled-cheese-sides" value="fresh fruit" id="grilled-cheese-fresh-fruit">
+          <label for="grilled-cheese-fresh-fruit">Fresh fruit</label><br>
+          <input type="radio" name="grilled-cheese-sides" value="potato chips" id="grilled-cheese-potato-chips">
+          <label for="grilled-cheese-potato-chips">Potato chips</label><br>
+
+          <p>Add Ons:</p>
+          <input type="checkbox" name="grilled-cheese-addons" value="turkey" id="grilled-cheese-turkey">
+          <label for="grilled-cheese-turkey">Turkey <i>$2.99</i></label><br><br>
+
+          <!-- Special Requests -->
+          <label for="special-requests">Special Requests:</label><br>
+          <textarea id="special-requests" name="special-requests" rows="4" cols="50" placeholder="Any special requests?"></textarea><br><br>
+
+          <input type="submit" value="Go to Checkout">
+        </section>
+      </form>
+    </main>
+
+    <footer>
+      <p>Made with love by mjeannetsa53199</p>
+    </footer>
+  </body>
+</html>
